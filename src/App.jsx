@@ -1,4 +1,5 @@
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
@@ -36,6 +37,7 @@ function App() {
           element={<Navigate to='/' />}
         />
       </Routes>
+      <Footer />
     </>
   );
 }

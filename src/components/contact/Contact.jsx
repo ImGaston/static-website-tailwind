@@ -4,7 +4,7 @@ import { BiTimeFive } from 'react-icons/bi';
 
 const Contact = () => {
   return (
-    <div className='flex flex-wrap justify-around p-3 shadow-md shadow-cyan-500/40  2xl:h-8'>
+    <div className='flex flex-wrap justify-around p-3 2xl:h-8'>
       <div className='row flex w-40'>
         <HiOutlinePhone
           size={24}

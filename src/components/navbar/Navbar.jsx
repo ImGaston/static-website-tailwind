@@ -7,7 +7,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className=' mb-3 flex flex-wrap items-center justify-between bg-primary px-2 py-3'>
+    <nav className='flex flex-wrap items-center justify-between  bg-primary px-2 py-3'>
       <div className='container mx-auto flex flex-wrap items-center justify-between px-4'>
         <div className='relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start'>
           <img
