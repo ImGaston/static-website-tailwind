@@ -1,12 +1,41 @@
-import Header from './header/Header';
-import Hero from './hero/Hero';
+import Header from './components/header/Header';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import Home from './pages/Home';
+import Contacto from './pages/Contacto';
+import Servicios from './pages/Servicios';
+import Profesionales from './pages/Profesionales';
+import Nosotros from './pages/Nosotros';
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <h1 className='text-3xl font-bold'>CM Charlone</h1>
+      <Routes>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        <Route
+          path='contacto'
+          element={<Contacto />}
+        />
+        <Route
+          path='servicios'
+          element={<Servicios />}
+        />
+        <Route
+          path='profesionales'
+          element={<Profesionales />}
+        />
+        <Route
+          path='nosotros'
+          element={<Nosotros />}
+        />
+        <Route
+          path='*'
+          element={<Navigate to='/' />}
+        />
+      </Routes>
     </>
   );
 }
